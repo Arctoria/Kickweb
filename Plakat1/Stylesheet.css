@@ -1,0 +1,42 @@
+.html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.background {
+  background-color: #633c36;
+  width: 500px;
+  height: 707px;
+  padding: 5px 40px 15px 28px;
+  box-sizing: border-box;
+  /* efwenjwekfn */
+}
+
+.title {
+  color: #312222;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 10em;
+  line-height: 0.8em;
+  letter-spacing: -9px;
+  text-indent: -35px;
+}
+
+.title2 {
+  color: #312222;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 10em;
+  line-height: 0.8em;
+  letter-spacing: -8.2px;
+  text-indent: -32px;
+}
+
+.red_box {
+  color: #312222;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  background-color: #b72e2c;
+  margin-top: 15px;
+  padding-top: 230px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+}
