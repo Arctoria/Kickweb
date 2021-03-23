@@ -1,45 +1,37 @@
 .html,
-body {
-  margin: 0px;
-  padding: 0px;
-}
+  body{
+      margin:0px;
+      padding:0px;
+      font-family: 'Work Sans';
+  }
+  .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width:100vw;
+      height:100vh;
 
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-}
+  }
+  .box>div{
+      border:1px solid black;
+  }
+  .box div.text {
+      width: 500px;
+      height: 500px;
+      background-color:lightblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size:144px;
+      transition-property: all;
+      transition-duration: 3s;
+      transition-timing-function: linear;
+      /*transform-origin:top left;*/ /*auskommentieren, dann skaliert das element vom zentrum her */
 
-.box > div {
-  width: 500px;
-  height: 500px;
-  position: relative;
-  background-color: rgb(84, 53, 112);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 90px;
-  transition-property: all;
-  transition-duration: 1s;
-  transition-timing-function: ease;
-}
+  }
 
-.box > div:first-of-type:hover {
-  background-color: rgb(99, 92, 126);
-  color: white;
-  transform: translate(50px, 50px);
-  z-index: 10;
-  /* margin-left: 100px; */
-  /* margin-top: 200px; */
-}
-.box > div:nth-of-type(2):hover {
-  background-color: rgb(99, 92, 126);
-  color: white;
-  transform: translate(50px, 50px);
-  z-index: 10;
-  /* margin-left: 100px; */
-  /* margin-top: 200px; */
-}
+  .box div.text:hover{
+      background-color:black;
+      color:white;
+      transform:scale(0.8, 2);
+  }
