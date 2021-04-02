@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="nrmlz.css">
+    <title>Document</title>
+</head>
+<body>
+    <button id="trigger">1.04.2021</button>
+    <div id="panel" class = "">
+        <button id="trigger">1.04.2021</button>
+        <div class="calendars">
+        <div class="calendar"></div>
+        <div class="calendar"></div></div>
+    </div>
+
+    <script>
+        // put button in a var
+        //panel in a var
+        const trigger = document.querySelector(`#trigger`)
+        const panel = document.querySelector(`#panel`)
+        //check for click button
+        // put class on the pael
+
+        trigger.addEventListener(`click`, function(){
+//set a class on the panel to introduce it
+    panel.classList.add(`doesExist`)
+setTimeout(() => {
+    //set a class on the panel to let it fade
+    panel.classList.add(`isVisible`)
+}, 50);
+    })
+
+        panel.addEventListener(`click`, function(){
+//set a class on the panel
+    panel.classList.remove(`isVisible`)
+    setTimeout(() => {
+    //set a class on the panel to let it fade
+    panel.classList.remove(`doesExist`)
+}, 50);
+    })
+        
+    </script>
+</body>
+</html>

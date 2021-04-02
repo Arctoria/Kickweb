@@ -1,0 +1,157 @@
+.html,
+body {
+  margin: 0;
+  padding: 0;
+
+}
+.background {
+  background-color: #000000;
+  padding: 5px 40px 15px 28px;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  display:flex;
+  justify-content: center;
+  color: #a02c2c;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: calc(1.4 *10em);
+  line-height: calc(1.4 *0.6em);
+  letter-spacing: calc(1.4 *-9px);
+  text-indent: calc(1.4 *-35px);
+}
+
+.title2 {
+  display:flex;
+  justify-content: center;
+  color: #e67575;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: calc(1.2 *10em);
+  line-height: calc(0.8 *0.55em);
+  letter-spacing: calc(1.4 *-8.2px);
+  text-indent: calc(1.4 *-32px);
+}
+
+.red_box {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #312222;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: calc(1.4 *20px);
+  background-color: #e41c15;
+  padding-top: calc(1.4 *230px);
+  padding-bottom: calc(1.4 *3px);
+  padding-left: calc(1.4 *7px);
+  margin-top: calc(3* 15px);
+}
+
+/* phone */
+
+@media screen and (max-width:600px){
+  .background {
+    background-color: #000000;
+    /* padding: 5px 40px 15px 28px; */
+    box-sizing: border-box;
+    width: calc(1.25 * 500px);
+    height: calc(1.4 * 707px);
+  }
+
+  .red_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100vw;
+    height: 22vh;
+    color: #312222;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: calc(1.5 *20px);
+    background-color: #df9fdf;
+    padding-top: calc(0.8 *230px);
+    padding-bottom: calc(1.5 *30px);
+    padding-left: calc(0.2px *7px);
+    margin-top: calc(3* 50px);
+
+  }
+
+  .title {
+    display: flex;
+  justify-content: center;
+    color: #c58ae0;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 30vw;
+    line-height: calc(1.7*0.6em);
+        letter-spacing: calc(0.9 *-9px);
+    text-indent: calc(0.9 *-35px);
+  }
+
+  .title2 {
+    display: flex;
+justify-content: center;
+    color: #b66579;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 25vw;
+    line-height: calc(0.2 *0.55em);
+    letter-spacing: calc(1.2 *-8.2px);
+    text-indent: calc(0.9 *-32px);
+  }
+}
+
+/* tablet */
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    .background {
+      background-color: #000000;
+      /* padding: 5px 40px 15px 28px; */
+      box-sizing: border-box;
+      width: calc(1.65 * 500px);
+      height: calc(1.35 * 707px);
+
+    }
+
+    .red_box {
+      display: flex;
+      flex-direction: column;
+      justify-content:space-around;
+      align-items:flex-end;
+      width: 100vw;
+      height: 22vh;
+      color: #0a0a0a;
+      font-family: "Libre Franklin", sans-serif;
+      font-size: calc(1.8 *20px);
+      background-color: #9fc6df;
+      padding-top: calc(0.8*230px);
+      padding-bottom: calc(2 *30px);
+      padding-right: calc(0.7 *7px);
+      margin-top: calc(0.8* 50px);
+    }
+
+    .title {
+      display: flex;
+ justify-content: center;
+      color: #8a97e0;
+      font-family: "Libre Franklin", sans-serif;
+      font-size: 25vw;
+      line-height: calc(1.4 *0.6em);
+      letter-spacing: calc(0.9 *-9px);
+      text-indent: calc(0.9 *-35px);
+    }
+  
+    .title2 {
+      display: flex;
+justify-content: center;
+      color: #8bdce2;
+      font-family: "Libre Franklin", sans-serif;
+      font-size: 25vw;
+      line-height: calc(0.9 *0.55em);
+      letter-spacing: calc(0.9 *-8.2px);
+      text-indent: calc(0.4 *-32px);
+    }
+
+
+    }
+}

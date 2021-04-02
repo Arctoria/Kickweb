@@ -1,0 +1,18 @@
+.html,
+body {
+    margin: 0;
+    padding: 0;
+   
+  }
+  .container{
+      width: 100%;
+      height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .quadrat{
+      height:20vh;
+      width: 20vw;
+      background-color: black;
+  }
