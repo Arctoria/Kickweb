@@ -21,6 +21,20 @@ body {
   line-height: calc(1.4 *0.6em);
   letter-spacing: calc(1.4 *-9px);
   text-indent: calc(1.4 *-35px);
+  transition-property:all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+/* Animation Rothko */
+@keyframes Rothko {
+  0% {margin-right: -100%;}
+  100% {margin-right: 0%;}
+}
+
+.background div.title {
+  animation-name:Rothko;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 
 .title2 {
@@ -32,6 +46,21 @@ body {
   line-height: calc(0.8 *0.55em);
   letter-spacing: calc(1.4 *-8.2px);
   text-indent: calc(1.4 *-32px);
+  transition-property:all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+
+/* Animation Chillida */
+@keyframes Chillida {
+  0% {margin-left: -100%;}
+  100% {margin-left: 0%;}
+}
+
+.background div.title2 {
+  animation-name:Chillida;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 
 .red_box {
@@ -47,6 +76,31 @@ body {
   padding-bottom: calc(1.4 *3px);
   padding-left: calc(1.4 *7px);
   margin-top: calc(3* 15px);
+transition: all; 
+ transition: ease-in-out;
+}
+/* Animation Red-Box */
+@keyframes redBox {
+  0% {opacity: 0%;margin-right:  100%;}
+  100% {opacity: 100%;margin-right: 0%;}
+}
+
+div.red_box {
+  animation-name:redBox;
+  animation-duration: 2s;
+}
+/* Animation Red-Box Text */
+
+@keyframes red_box_text {
+  0%   {opacity:0%; color: lightcoral;}
+  100% {opacity:100%;}
+}
+
+div.red_box > div {
+  animation-name: red_box_text;
+  animation-duration: 2s;
+  /* animation-timing-function: ease-in-out; */
+  /* animation-iteration-count: infinite; */
 }
 
 /* phone */
@@ -72,7 +126,7 @@ body {
     font-size: calc(1.5 *20px);
     background-color: #df9fdf;
     padding-top: calc(0.8 *230px);
-    padding-bottom: calc(1.5 *30px);
+    padding-bottom: calc(1.5 *50px);
     padding-left: calc(0.2px *7px);
     margin-top: calc(3* 50px);
 
@@ -125,7 +179,7 @@ justify-content: center;
       font-size: calc(1.8 *20px);
       background-color: #9fc6df;
       padding-top: calc(0.8*230px);
-      padding-bottom: calc(2 *30px);
+      padding-bottom: calc(2.5 *30px);
       padding-right: calc(0.7 *7px);
       margin-top: calc(0.8* 50px);
     }
@@ -140,7 +194,7 @@ justify-content: center;
       letter-spacing: calc(0.9 *-9px);
       text-indent: calc(0.9 *-35px);
     }
-  
+
     .title2 {
       display: flex;
 justify-content: center;
