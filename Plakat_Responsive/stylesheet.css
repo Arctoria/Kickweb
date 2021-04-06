@@ -8,7 +8,7 @@ body {
   background-color: #000000;
   padding: 5px 40px 15px 28px;
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -25,6 +25,8 @@ body {
   transition-duration: 2s;
   transition-timing-function: linear;
 }
+
+
 /* Animation Rothko */
 @keyframes Rothko {
   0% {margin-right: -100%;}
@@ -51,6 +53,7 @@ body {
   transition-timing-function: linear;
 }
 
+
 /* Animation Chillida */
 @keyframes Chillida {
   0% {margin-left: -100%;}
@@ -62,6 +65,7 @@ body {
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
 }
+
 
 .red_box {
   display:flex;
@@ -79,6 +83,8 @@ body {
 transition: all; 
  transition: ease-in-out;
 }
+
+
 /* Animation Red-Box */
 @keyframes redBox {
   0% {opacity: 0%;margin-right:  100%;}
@@ -89,6 +95,8 @@ div.red_box {
   animation-name:redBox;
   animation-duration: 2s;
 }
+
+
 /* Animation Red-Box Text */
 
 @keyframes red_box_text {
@@ -99,18 +107,16 @@ div.red_box {
 div.red_box > div {
   animation-name: red_box_text;
   animation-duration: 2s;
-  /* animation-timing-function: ease-in-out; */
-  /* animation-iteration-count: infinite; */
 }
+
 
 /* phone */
 
 @media screen and (max-width:600px){
   .background {
     background-color: #000000;
-    /* padding: 5px 40px 15px 28px; */
     box-sizing: border-box;
-    width: calc(1.25 * 500px);
+    width: 100%;
     height: calc(1.4 * 707px);
   }
 
@@ -119,7 +125,7 @@ div.red_box > div {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    width: 100vw;
+    width: 100%;
     height: 22vh;
     color: #312222;
     font-family: "Libre Franklin", sans-serif;
@@ -129,23 +135,22 @@ div.red_box > div {
     padding-bottom: calc(1.5 *50px);
     padding-left: calc(0.2px *7px);
     margin-top: calc(3* 50px);
-
   }
 
   .title {
     display: flex;
-  justify-content: center;
+    justify-content: center;
     color: #c58ae0;
     font-family: "Libre Franklin", sans-serif;
     font-size: 30vw;
     line-height: calc(1.7*0.6em);
-        letter-spacing: calc(0.9 *-9px);
+    letter-spacing: calc(0.9 *-9px);
     text-indent: calc(0.9 *-35px);
   }
 
   .title2 {
     display: flex;
-justify-content: center;
+    justify-content: center;
     color: #b66579;
     font-family: "Libre Franklin", sans-serif;
     font-size: 25vw;
@@ -160,11 +165,9 @@ justify-content: center;
 @media screen and (min-width:600px) and (max-width:768px) {
     .background {
       background-color: #000000;
-      /* padding: 5px 40px 15px 28px; */
       box-sizing: border-box;
-      width: calc(1.65 * 500px);
+      width: 100%;
       height: calc(1.35 * 707px);
-
     }
 
     .red_box {
@@ -172,7 +175,7 @@ justify-content: center;
       flex-direction: column;
       justify-content:space-around;
       align-items:flex-end;
-      width: 100vw;
+      width: 100%;
       height: 22vh;
       color: #0a0a0a;
       font-family: "Libre Franklin", sans-serif;
@@ -186,7 +189,7 @@ justify-content: center;
 
     .title {
       display: flex;
- justify-content: center;
+      justify-content: center;
       color: #8a97e0;
       font-family: "Libre Franklin", sans-serif;
       font-size: 25vw;
@@ -197,7 +200,7 @@ justify-content: center;
 
     .title2 {
       display: flex;
-justify-content: center;
+      justify-content: center;
       color: #8bdce2;
       font-family: "Libre Franklin", sans-serif;
       font-size: 25vw;
@@ -205,7 +208,5 @@ justify-content: center;
       letter-spacing: calc(0.9 *-8.2px);
       text-indent: calc(0.4 *-32px);
     }
+   }
 
-
-    }
-}
