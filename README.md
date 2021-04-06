@@ -1,4 +1,8 @@
 # Kickweb
+
+Index
+
+
 Responsive
 https://kickwebdarline.netlify.app/plakat_responsive/sprint3
 <br><br/>
@@ -6,6 +10,9 @@ https://kickwebdarline.netlify.app/plakat_responsive/sprint3
 Animation
 https://kickwebdarline.netlify.app/plakat_animation/sprint2
 <br><br/>
+
 Static
+https://kickwebdarline.netlify.app/plakat_static/sprint1
+<br><br/>
 
 
